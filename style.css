@@ -1,0 +1,120 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* LAYOUT */
+.container {
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 220px;
+    background-color: #263238; /* cinza escuro */
+    color: white;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    color: #66bb6a; /* verde */
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sidebar li:hover {
+    background-color: #37474f;
+}
+
+/* MAIN */
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* TOPO */
+.topbar {
+    margin-bottom: 20px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    flex: 1;
+    border-left: 5px solid #2e7d32; /* verde */
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #555;
+}
+
+.card p {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* FILA */
+.fila {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.fila h2 {
+    margin-bottom: 15px;
+    color: #2e7d32;
+}
+
+/* TABELA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* STATUS */
+.ativo {
+    color: green;
+    font-weight: bold;
+}
+
+.fila-status {
+    color: gray;
+}
