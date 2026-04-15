@@ -118,3 +118,44 @@ td {
 .fila-status {
     color: gray;
 }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    /* Layout geral */
+    .container {
+        flex-direction: column;
+    }
+
+    /* Sidebar vira topo */
+    .sidebar {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .sidebar ul {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .sidebar li {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    /* Cards em coluna */
+    .cards {
+        flex-direction: column;
+    }
+
+    /* Tabela com scroll horizontal */
+    .fila {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 600px;
+    }
+}
