@@ -1,0 +1,161 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #500a0a;
+}
+
+/* LAYOUT */
+.container {
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 220px;
+    background-color: #373f42; /* cinza escuro */
+    color: white;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    color: #66bb6a; /* verde */
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sidebar li:hover {
+    background-color: #37474f;
+}
+
+/* MAIN */
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* TOPO */
+.topbar {
+    margin-bottom: 20px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    flex: 1;
+    border-left: 5px solid #2e7d32; /* verde */
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #555;
+}
+
+.card p {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* FILA */
+.fila {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.fila h2 {
+    margin-bottom: 15px;
+    color: #2e7d32;
+}
+
+/* TABELA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* STATUS */
+.ativo {
+    color: green;
+    font-weight: bold;
+}
+
+.fila-status {
+    color: gray;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    /* Layout geral */
+    .container {
+        flex-direction: column;
+    }
+
+    /* Sidebar vira topo */
+    .sidebar {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .sidebar ul {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .sidebar li {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    /* Cards em coluna */
+    .cards {
+        flex-direction: column;
+    }
+
+    /* Tabela com scroll horizontal */
+    .fila {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 600px;
+    }
+}

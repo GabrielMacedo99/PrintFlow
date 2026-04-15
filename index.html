@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrintFlow - Sistema</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h2>PrintFlow</h2>
+        <ul>
+            <li>🏠 Dashboard</li>
+            <li>🖨️ Fila de Impressão</li>
+            <li>👤 Usuários</li>
+            <li>⚙️ Configurações</li>
+        </ul>
+    </aside>
+
+    <!-- CONTEÚDO -->
+    <main class="main">
+
+        <!-- TOPO -->
+        <header class="topbar">
+            <h1>Dashboard</h1>
+        </header>
+
+        <!-- CARDS -->
+        <section class="cards">
+            <div class="card">
+                <h3>Impressões Hoje</h3>
+                <p>12</p>
+            </div>
+
+            <div class="card">
+                <h3>Filamento Usado</h3>
+                <p>140g</p>
+            </div>
+
+            <div class="card">
+                <h3>Tempo Total</h3>
+                <p>4h30</p>
+            </div>
+
+            <div class="card">
+                <h3>Impressoras Ativas</h3>
+                <p>3</p>
+            </div>
+        </section>
+
+        <!-- FILA DE IMPRESSÃO -->
+        <section class="fila">
+            <h2>Fila de Impressão</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Projeto</th>
+                        <th>Usuário</th>
+                        <th>Tempo</th>
+                        <th>Filamento</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Gato Articulado</td>
+                        <td>Gabriel</td>
+                        <td>1h</td>
+                        <td>10g</td>
+                        <td class="ativo">Imprimindo</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tubos</td>
+                        <td>Hemilly</td>
+                        <td>1h30</td>
+                        <td>50g</td>
+                        <td class="fila-status">Na fila</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lab Matemática</td>
+                        <td>Vinícius</td>
+                        <td>2h</td>
+                        <td>80g</td>
+                        <td class="fila-status">Na fila</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
