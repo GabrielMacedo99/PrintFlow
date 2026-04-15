@@ -8,7 +8,7 @@
 /* BASE */
 body {
     font-family: Arial, sans-serif;
-    background-color: #500a0a;
+    background-color: #f4f4f4;
 }
 
 /* LAYOUT */
@@ -19,7 +19,7 @@ body {
 /* SIDEBAR */
 .sidebar {
     width: 220px;
-    background-color: #373f42; /* cinza escuro */
+    background-color: #263238; /* cinza escuro */
     color: white;
     height: 100vh;
     padding: 20px;
